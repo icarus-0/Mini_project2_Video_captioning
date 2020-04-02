@@ -1,4 +1,4 @@
-# author - Naman Singh Chandel
+# Author - Naman Singh Chandel
 
 
 Video captioning, the art of translating a video to generate a meaningful summary of the
@@ -23,8 +23,8 @@ enterprise-level video-captioning systems.
 
 ```bash
 
-    python VideoCaptioningPreProcessing.py process_main --video_dest '/media/santanu/9eb9b6dc-b380-486e-b4fd-c424a325b976/Video Captioning/data/' --feat_dir '/media/santanu/9eb9b6dc-b380-486e-b4fd-
-    c424a325b976/Video Captioning/features/' --temp_dest '/media/santanu/9eb9b6dc-b380-486e-b4fd-c424a325b976/Video Captioning/temp/' --img_dim 224 --channels 3 --batch_size=128 --frames_step 80
+    python VideoCaptioningPreProcessing.py process_main --video_dest '/media/naman/9eb9b6dc-b380-486e-b4fd-c424a325b976/Video Captioning/data/' --feat_dir '/media/naman/9eb9b6dc-b380-486e-b4fd-
+    c424a325b976/Video Captioning/features/' --temp_dest '/media/naman/9eb9b6dc-b380-486e-b4fd-c424a325b976/Video Captioning/temp/' --img_dim 224 --channels 3 --batch_size=128 --frames_step 80
 
 ```
 
@@ -33,12 +33,12 @@ enterprise-level video-captioning systems.
 
 ```bash
 
-python Video_seq2seq.py process_main --path_prj '/media/santanu/9eb9b6dc-b380-486e-b4fd-c424a325b976/Video Captioning/' --caption_file video_corpus.csv --feat_dir features --cnn_feat_dim 4096 --h_dim 512 --batch_size 32 --lstm_steps 80 --video_steps=80 --out_steps 20 --learning_rate 1e-4--epochs=100
+python Video_seq2seq.py process_main --path_prj '/media/naman/9eb9b6dc-b380-486e-b4fd-c424a325b976/Video Captioning/' --caption_file video_corpus.csv --feat_dir features --cnn_feat_dim 4096 --h_dim 512 --batch_size 32 --lstm_steps 80 --video_steps=80 --out_steps 20 --learning_rate 1e-4--epochs=100
 
 ```
 
 
-### To the the application
+### To Run the the application
 
 python main.py
 
